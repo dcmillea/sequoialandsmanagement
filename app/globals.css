@@ -1,26 +1,184 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-evergreen: rgb(var(--evergreen));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --radius: var(--radius);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  /* ===============================
+     BASE SURFACES
+     =============================== */
+
+  /* Main page background (soft paper white) */
+  --background: 248 250 249;
+
+  /* Default text color (deep forest green) */
+  --foreground: 15 31 20;
+
+  --evergreen: 46 79 58;
+
+
+  /* ===============================
+     CARDS / POPOVERS
+     =============================== */
+
+  /* Card backgrounds (pure white) */
+  --card: 255 255 255;
+
+  /* Text on cards */
+  --card-foreground: 15 31 20;
+
+  /* Dropdowns, tooltips, popovers */
+  --popover: 255 255 255;
+
+  /* Text inside popovers */
+  --popover-foreground: 15 31 20;
+
+
+  /* ===============================
+     PRIMARY BRAND COLORS
+     =============================== */
+
+  /* Primary brand color (Sequoia forest green) */
+  --primary: 31 77 43;
+
+  /* Text/icons on primary buttons */
+  --primary-foreground: 248 250 249;
+
+
+  /* ===============================
+     SECONDARY / ACCENT COLORS
+     =============================== */
+
+  /* Secondary actions (moss green) */
+  --secondary: 79 138 91;
+
+  /* Text on secondary backgrounds */
+  --secondary-foreground: 15 31 20;
+
+  /* Accent color (used sparingly for highlights) */
+  --accent: 79 138 91;
+
+  /* Text/icons on accent backgrounds */
+  --accent-foreground: 15 31 20;
+
+
+  /* ===============================
+     MUTED / SUBTLE UI ELEMENTS
+     =============================== */
+
+  /* Muted background (soft moss tint) */
+  --muted: 231 242 234;
+
+  /* Muted text (labels, helper text) */
+  --muted-foreground: 95 111 102;
+
+
+  /* ===============================
+     FEEDBACK / STATES
+     =============================== */
+
+  /* Destructive actions (errors, delete) */
+  --destructive: 153 27 27;
+
+  /* Text/icons on destructive backgrounds */
+  --destructive-foreground: 248 250 249;
+
+
+  /* ===============================
+     BORDERS / INPUTS / RINGS
+     =============================== */
+
+  /* Borders & dividers (light green-gray) */
+  --border: 214 227 219;
+
+  /* Input borders */
+  --input: 195 214 203;
+
+  /* Focus ring color (matches primary) */
+  --ring: 31 77 43;
+
+
+  /* ===============================
+     SHAPE
+     =============================== */
+
+  /* Default border radius */
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    @apply bg-background text-foreground;
+  }
 }
