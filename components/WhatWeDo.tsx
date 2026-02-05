@@ -23,7 +23,7 @@ const items = [
 
 export default function WhatWeDo() {
   return (
-    <section className="bg-muted">
+    <section id="what-we-do" className="bg-muted">
       <div className="mx-auto max-w-7xl px-6 py-20">
         {/* Header */}
         <div className="mx-auto max-w-2xl text-center">

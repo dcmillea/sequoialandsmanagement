@@ -1,12 +1,13 @@
 import FeaturedProjects from "@/components/FeaturedProjects";
 import Hero from "@/components/Hero";
+import HeroVideo from "@/components/HeroVideo";
 import OwnerSection from "@/components/OwnerSection";
 import WhatWeDo from "@/components/WhatWeDo";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <HeroVideo />
       <WhatWeDo />
       <FeaturedProjects />
       <OwnerSection />
