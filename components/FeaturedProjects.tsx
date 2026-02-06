@@ -6,28 +6,28 @@ import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
-    title: "Creekside Habitat Restoration",
+    title: "Alpine",
     location: "Central Coast, CA",
     image: "/projects/1.jpg",
     description:
-      "Native planting, erosion control, and long-term stewardship planning to support healthy habitat.",
-    tags: ["Restoration", "Habitat", "Stewardship"],
+      "5.51 acres of Coast Live Oak woodland with boulder outcroppings and abundant wildlife. Cleanup and restoration removed hazardous waste and invasive plants while reducing extreme fuel loads.",
+    tags: ["5.51 Acres", "Cleanup", "Invasives Removed", "Fuel Reduction", "Habitat Recovery"],
   },
   {
-    title: "Forest Health & Fuels Reduction",
-    location: "Foothills Region",
+    title: "Meadow View",
+    location: "Sequoia & Kings Canyon National Park",
     image: "/projects/2.jpg",
     description:
-      "Selective clearing and resilience work designed to reduce risk and support forest recovery.",
-    tags: ["Forest Health", "Resilience"],
+      "Two historic cabins, mature Sugar Pines, a tributary to Azalea Creek, and commanding meadow and backcountry views. Completed a first-of-its-kind land exchange with the U.S. National Park Service.",
+    tags: ["Historic Cabins", "Land Exchange", "Sugar Pines", "Riparian"],
   },
   {
-    title: "Open Space Preservation Plan",
-    location: "Northern California",
+    title: "KNP Projects",
+    location: "Sequoia & Kings Canyon National Park",
     image: "/projects/3.jpg",
     description:
-      "Preservation strategy and land care roadmap to protect sensitive areas and wildlife corridors.",
-    tags: ["Preservation", "Planning"],
+      "Five projects within park boundaries focused on stewardship, preservation, and historic structure rehabilitation across sensitive forest and riparian landscapes.",
+    tags: ["5 Projects", "Stewardship", "Preservation", "Rehabilitation"],
   },
 ];
 

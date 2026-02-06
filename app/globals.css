@@ -43,12 +43,13 @@
      =============================== */
 
   /* Main page background (soft paper white) */
-  --background: 248 250 249;
+  --background: 150 20% 97%;
 
   /* Default text color (deep forest green) */
-  --foreground: 15 31 20;
+  --foreground: 145 35% 12%;
 
-  --evergreen: 46 79 58;
+  /* Evergreen accent */
+  --evergreen: 145 26% 25%;
 
 
   /* ===============================
@@ -56,16 +57,16 @@
      =============================== */
 
   /* Card backgrounds (pure white) */
-  --card: 255 255 255;
+  --card: 0 0% 100%;
 
   /* Text on cards */
-  --card-foreground: 15 31 20;
+  --card-foreground: 145 35% 12%;
 
   /* Dropdowns, tooltips, popovers */
-  --popover: 255 255 255;
+  --popover: 0 0% 100%;
 
   /* Text inside popovers */
-  --popover-foreground: 15 31 20;
+  --popover-foreground: 145 35% 12%;
 
 
   /* ===============================
@@ -73,10 +74,10 @@
      =============================== */
 
   /* Primary brand color (Sequoia forest green) */
-  --primary: 31 77 43;
+  --primary: 145 42% 21%;
 
   /* Text/icons on primary buttons */
-  --primary-foreground: 248 250 249;
+  --primary-foreground: 150 20% 97%;
 
 
   /* ===============================
@@ -84,16 +85,16 @@
      =============================== */
 
   /* Secondary actions (moss green) */
-  --secondary: 79 138 91;
+  --secondary: 138 30% 43%;
 
   /* Text on secondary backgrounds */
-  --secondary-foreground: 15 31 20;
+  --secondary-foreground: 145 35% 12%;
 
   /* Accent color (used sparingly for highlights) */
-  --accent: 79 138 91;
+  --accent: 138 30% 43%;
 
   /* Text/icons on accent backgrounds */
-  --accent-foreground: 15 31 20;
+  --accent-foreground: 145 35% 12%;
 
 
   /* ===============================
@@ -101,10 +102,10 @@
      =============================== */
 
   /* Muted background (soft moss tint) */
-  --muted: 231 242 234;
+  --muted: 138 28% 93%;
 
   /* Muted text (labels, helper text) */
-  --muted-foreground: 95 111 102;
+  --muted-foreground: 145 12% 40%;
 
 
   /* ===============================
@@ -112,10 +113,10 @@
      =============================== */
 
   /* Destructive actions (errors, delete) */
-  --destructive: 153 27 27;
+  --destructive: 0 65% 36%;
 
   /* Text/icons on destructive backgrounds */
-  --destructive-foreground: 248 250 249;
+  --destructive-foreground: 150 20% 97%;
 
 
   /* ===============================
@@ -123,13 +124,13 @@
      =============================== */
 
   /* Borders & dividers (light green-gray) */
-  --border: 214 227 219;
+  --border: 138 20% 85%;
 
   /* Input borders */
-  --input: 195 214 203;
+  --input: 138 18% 80%;
 
   /* Focus ring color (matches primary) */
-  --ring: 31 77 43;
+  --ring: 145 42% 21%;
 
 
   /* ===============================
